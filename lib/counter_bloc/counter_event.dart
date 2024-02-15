@@ -7,9 +7,9 @@ abstract class CounterEvent {
 }
 
 class IncrementEvent extends CounterEvent{
-   IncrementEvent(int value): super(counter: value)
+   IncrementEvent({required super.counter});
 }
 
 class DecrementEvent extends CounterEvent{
-  DecrementEvent(int value): super(counter: value);
+  DecrementEvent({required super.counter});
 }

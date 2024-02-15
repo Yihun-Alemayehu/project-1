@@ -19,17 +19,17 @@ class HomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                // Text('${state}'),
+                Text('${state.counter}'),
                 
                 TextButton(
                   onPressed: () {
-                    context.read<CounterBloc>().add(IncrementEvent());
+                    context.read<CounterBloc>().add(IncrementEvent(counter: state.counter));
                   },
                   child: const Text('Increment'),
                 ),
                 TextButton(
                   onPressed: () {
-                    context.read<CounterBloc>().add(DecrementEvent());
+                    context.read<CounterBloc>().add(DecrementEvent(counter: state.counter));
                   },
                   child: const Text('Decrement'),
                 ),
