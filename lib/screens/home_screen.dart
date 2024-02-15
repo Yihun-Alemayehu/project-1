@@ -10,6 +10,8 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Counter'),
+        centerTitle: true,
+        
       ),
       body: BlocBuilder<CounterBloc, CounterState>(
         builder: (context, state) {
@@ -19,7 +21,10 @@ class HomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text('${state.counter}'),
+                Text('${state.counter}',
+                style: const TextStyle(
+                  fontSize: 40,
+                ),),
                 
                 TextButton(
                   onPressed: () {
