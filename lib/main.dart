@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:project_1/counter_bloc/counter_bloc.dart';
-import 'package:project_1/screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
