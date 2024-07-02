@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
 
-class UserEntity extends Equatable{
+class UserEntity extends Equatable {
   final String id;
   final String createdAt;
   final String name;
@@ -13,7 +13,7 @@ class UserEntity extends Equatable{
     required this.avatar,
   });
 
-  factory UserEntity.empty(){
+  factory UserEntity.empty() {
     return const UserEntity(
       id: '1',
       createdAt: 'createdAt',
@@ -21,7 +21,7 @@ class UserEntity extends Equatable{
       avatar: 'avatar',
     );
   }
-  
+
   @override
-  List<Object?> get props => [id];
+  List<Object?> get props => [id, createdAt, name, avatar];
 }

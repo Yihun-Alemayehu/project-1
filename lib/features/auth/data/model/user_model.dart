@@ -24,6 +24,15 @@ class UserModel extends UserEntity {
     );
   }
 
+  factory UserModel.empty(){
+    return const UserModel(
+      id: '',
+      createdAt: '',
+      name: '',
+      avatar: '',
+    );
+  }
+
   Map<String, dynamic> toMap() {
     return <String, dynamic>{
       'id': id,
