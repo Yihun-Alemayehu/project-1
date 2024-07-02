@@ -1,5 +1,3 @@
-import 'package:dartz/dartz.dart';
-import 'package:project_1/core/errors/failure.dart';
 import 'package:project_1/core/utils/typedef.dart';
 import 'package:project_1/features/auth/domain/entities/user_entity.dart';
 
